@@ -1,0 +1,496 @@
+@import "bourbon/bourbon"
+
+$text-color: #333
+$red-color: #9B1818
+$blue-color: #003469
+$dark-color: #000
+$green-color: #67bc5c
+
+body
+	font-family: "RobotoRegular", sans-serif
+	color: $text-color
+	font-weight: normal
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 2
+	-webkit-font-smoothing: antialised
+
+h1
+	color: #fff
+	font-size: 60px
+	line-height: 56px
+	font-weight: bold
+	font-family: "Cleanvertising", sans-serif
+	margin: 0
+
+section,
+footer
+	padding: 58px 0 58px 0
+	h2
+		color: $blue-color
+		font-size: 50px
+		line-height: 56px
+		margin-bottom: 50px
+		text-align: center
+		margin-top: 0
+		font-weight: normal
+		font-family: "Cleanvertising", sans-serif
+	&.s_dark
+		h2, h3, p
+			color: #fff
+
+header
+	min-height: 640px
+	background-image: url("/img/top_bg.jpg")
+	background-position: top center
+	background-size: cover
+	color: #fff
+	padding-top: 26px
+	padding-bottom: 40px
+
+
+.logo
+	font-size: 40px
+	font-family: "RobotoBold", sans-serif
+	font-weight: bold
+
+.top_phone
+	text-align: right 
+
+/*Табы номеров телефона*/
+
+.top_phone .wrapper .tab
+	text-transform: uppercase
+	color: #fff
+	cursor: pointer
+
+.top_phone .wrapper .tab_item
+	font-size: 35px
+	font-family: "RobotoBold",serif
+
+.top_phone .wrapper .active 
+	text-decoration: underline
+
+.top_header
+	margin-top: 54px
+	h2
+		margin: 10px 0 0 0
+		font-family: "Cleanvertising", sans-serif
+		font-size: 37px
+
+/*Табы скидки учащимся*/
+.tab_header .wrapper .active 
+	color: #000
+	background-color: rgba(255,255,255,.60)
+
+
+.tab_header
+	margin-top: 30px
+	.tab
+		display: inline-block
+		background-color: rgba(255,255,255,.25)
+		text-transform: uppercase
+		padding: 10px 25px
+		cursor: pointer
+		float: left
+		font-family: "RobotoBold",sans-serif
+		@include transition(all .25s ease)	//burbon плавній переход
+	.tab_content
+		font-family: "RobotoBold",sans-serif
+		background-color: rgba(255,255,255,.60)
+		padding: 25px 25px 20px 25px	
+		color: #000
+		font-size: 16px
+		text-transform: uppercase
+	.tab_item
+		ul,li
+			list-style-type: none
+			margin: 0
+			padding: 0
+		li
+			padding-left: 40px
+			position: relative
+			margin-bottom: 10px
+		i
+			position: absolute
+			left: 0
+			top: -2px
+			line-height: 32px
+			color: #6e6966
+			font-size: 24px
+.button
+	border: none
+	cursor: pointer
+	display: inline-block
+	height: 46px
+	line-height: 46px
+	padding: 0 32px
+	background-color: #000
+	text-transform: uppercase
+	text-align: center
+	border-radius: 3px
+	color: #fff
+	font-size: 16px
+	font-family: "RobotoBold",sans-serif
+	&.btn_red
+		background-color: $red-color
+	&.btn_green
+		background-color: $green-color
+	&.btn_white
+		background-color: #fff
+		color: #000
+
+a.button
+	text-decoration: none
+	color: #fff
+
+.button_wrap
+	text-align: right
+	padding-top: 8px
+
+//укажим линейный градиент, перелив цвета, указав первый и последний цвет
+.s_tizers
+	+linear-gradient(#c6d8ee, #e8eff7)
+	color: $blue-color
+	font-family: "Cleanvertising",sans-serif
+	text-transform: uppercase
+	padding: 59px 0 0 0
+	span
+		font-size: 14px
+		display: block
+	strong
+		font-weight: normal
+		font-size: 23px
+		display: block
+	//каждый див должен иметь отступ, чтоб при адап. не слипались они
+	.row
+		> div 
+			margin-bottom: 30px	
+
+//зададим элементам выравнивание в строку
+.tiz_img, .tiz_desc
+		display: inline-block
+		vertical-align: bottom
+//стили для иконки
+.tiz_img i
+	font-size: 70px
+	line-height: 46px
+	margin-right: 5px
+
+
+.s_tizers .row
+	//10 - иконка
+	> div:nth-child(1) 
+		i
+			font-family: "RobotoRegular",sans-serif
+			font-size: 75px
+			letter-spacing: -16px
+			margin-right: 23px
+		span
+			font-size: 20px
+			line-height: 20px
+		strong
+			font-size: 25px
+			line-height: 42px
+
+	//Иконка - книга
+	> div:nth-child(2)
+		span
+			font-size: 14px
+			line-height: 1px	
+		strong
+			font-size: 25px
+			line-height: 52px
+		i
+			line-height: 45px
+
+	//Иконка - студент
+	> div:nth-child(3)
+		span
+			font-size: 14px
+			line-height: 10px	
+		strong
+			font-size: 25px
+			line-height: 42px
+		i
+			line-height: 35px
+
+	//Иконка - IELTS
+	> div:nth-child(4)
+		span
+			font-size: 14px
+			line-height: 11px	
+		strong
+			font-size: 23px
+			line-height: 42px
+		i
+			line-height: 36px
+
+//Доверьте обучение профессионалам
+p strong
+	font-family: "RobotoBold", sans-serif
+	font-weight: normal
+
+.s_profi
+	.profi_left
+		i
+			font-size: 120px
+			line-height: 120px
+			color: $red-color
+	.profi_right
+		left: 20px
+		h3
+			display: inline-block
+			margin: 0
+			font-size: 30px
+			color: $red-color	
+
+		p
+			line-height: 24px
+			margin-top: -3px
+	.profi_item 
+		margin-bottom: 20px
+		&:last-child 
+			margin-bottom: 30px
+//Форма обратной связи
+form
+	background-color: #f7f7f7
+	padding: 25px 30px
+	border: $green-color 5px solid
+	border-radius: 5px	
+	
+	h2
+		text-transform: uppercase
+		margin-top: 0
+		font-family: "RobotoBold",sans-serif
+		font-size: 22px
+		line-height: 22px
+		color: $text-color
+		margin-bottom: 30px
+	label
+		display: block
+		margin-bottom: 15px
+		color: #666
+		font-size: 14px
+	input,
+	select
+		display: block
+		line-height: 40px
+		height: 40px
+		border: #d9d9d9 1px solid
+		font-size: 20px
+		margin-top: 3px
+		//Тень для полей ввода
+		box-shadow: 0 0 20px rgba(0,0,0,.06) inset
+		width: 100%
+		text-indent: 10px
+		//Тень по активному полю
+		&:focus
+			box-shadow: $green-color 0 0 0 2px
+			border-radius: 3px
+	//Оформим значек стрелочки в select
+	select
+		//Удалим штатную стрелочку
+		-webkit-appearance: none
+		-moz-appearance: none
+		text-indent: 10px
+		text-overflow: "" 
+		background: url('/img/chevron-glyphicon-extra-small.png') no-repeat
+		background-position: 97% 10px
+		//зададим нужную
+		background-image: url("/img/arrow.svg")
+		background-repeat: no-repeat
+		background-position: right center
+		//стиль выпадающего списка
+		> option 
+	    	font-size: 14px
+
+	.button_wrap
+		text-align: center
+		margin: 30px 0 10px 0
+
+//Отзывы наших учасников
+.s_preview
+	background-image: url("/img/middle_bg.jpg")
+	//Картинка отсается на месте, когда страница скролится
+	background-repeat: repeat-x
+	background-attachment: fixed
+	min-height: 500px
+	//зададим цвет по дефолту потому что на маленьких экранах не хватает фоновой картинки
+	background-color: #412521
+//Карусель
+.review_item
+	color:#fff
+	text-align: center
+	h4
+		font-family: "Times New Roman",serif
+		font-style: italic
+		font-size: 25px
+		line-height: 25px
+		font-weight: normal
+		margin-top: 20px
+		margin-bottom: 26px
+	p
+		margin: 25px auto 0
+		float: none
+		display: inline-block
+		font-size: 15px
+	.image_wrap
+		text-align: center
+		display: inline-block
+		img
+			width: 165px
+			height: 165px	
+			display: inline-block
+			border-radius: 50%
+			border: #525a5b 10px solid 
+
+.hr
+	width: 80px
+	height: 1px
+	background-color: #cea380
+	margin: auto
+
+//Оформим стрелки карусели
+.owl-nav
+	div
+		width: 34px
+		height: 140px
+		background-image: url("/img/s_arrows.png")
+		//зададим непрозрачность
+		opacity: .5
+		&:hover
+			opacity: 1
+		//спозиционируем стрелки
+		position: absolute
+		top: 20px
+		&.owl-next
+			right: 0
+			background-position: top right
+
+//Оформим стрелки карусели
+.owl-dots
+	width: 100%
+	margin-top: 20px
+	text-align: center
+	//обычная точка
+	.owl-dot
+		width: 15px
+		height: 15px
+		background-color: #fff
+		display: inline-block
+		margin: 0 5px
+		border-radius: 50%
+		opacity: .5
+		//точка при навидении
+		&.active		//задаем псевдокласс именно через точку
+			opacity: .8	
+
+//Повышение знаний
+.s_back
+	background-image: url("/img/red_bg.jpg")
+	background-position: top center
+	padding: 40px 5px
+	text-align: center  //ВСЕ ЭЛЕМЕНТЫ БЛОКА БУДУТ ВЫРАВНИВАТСЯ ПО ЦЕНТРУ
+	h3
+		margin: 0 0 30px 0
+		font-size: 26px
+		font-weight: normal
+		text-transform: uppercase
+		text-align: center
+		background-color: rgba(255,255,255,.13)
+		padding: 10px 0
+		line-height: 39px
+
+//Как нас найти
+.s_contact
+	text-align: center
+	padding-bottom: 0
+	h2
+		display: inline-block
+		color: #000
+		height: 45px
+		line-height: 45px
+		vertical-align: middle
+		margin-bottom: 0
+	.tabs
+		display: inline-block
+		height: 45px
+		line-height: 45px
+		vertical-align: middle
+		margin-left: 25px
+		.tab	
+			//У неактивного фон - белый, цвет - красный, рамка
+			float: left
+			padding: 0 60px
+			border: $red-color 5px solid
+			line-height: 38px
+			background-color: #FFF
+			color: $red-color
+			font-family: "RobotoBold", sans-serif
+			//В москве - зададим нужное скругление
+			&:first-child
+				border-radius: 3px 0 0 3px
+			//В караганде - зададим нужное скругление
+			&:nth-child(2)
+				border-radius: 0 3px 3px 0
+			//у активного фон - красный, цвет - белый
+			&.active
+				background-color: $red-color
+				color: #fff
+	.tab_item
+		margin-top: 11px
+		font-size: 18px
+//карта
+.map
+	margin-top: 20px
+	
+//Для отмены масштабирования карты	
+.overlay 
+	background:transparent 
+	position:relative 
+	width:100%
+	height:550px
+	top:550px
+	margin-top:-550px
+
+footer
+	padding: 71px 0 120px 0
+	text-align: center	
+	h2
+		color: #000
+		margin-bottom: 20px	
+	p
+		font-size: 	18px
+		margin-bottom: 47px
+	.bottom_phone
+		color: $red-color
+		.tabs
+			text-transform: uppercase 
+		.tab_content
+			font-family: "RobotoBold", sans-serif
+			font-size: 35px
+			line-height: 46px
+		//Подчеркнутая линия под табом
+		.wrapper .active		//задается именно так
+			text-decoration: underline
+	.button	
+		margin-top: 40px
+
+
+//Стили для рез. валид. полей ввода
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+	box-shadow: $red-color 0 0 0 2px
+	border-color: $red-color
+
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+

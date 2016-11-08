@@ -1,0 +1,595 @@
+@charset "UTF-8";
+body {
+  font-family: "RobotoRegular", sans-serif;
+  color: #333;
+  font-weight: normal;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 2;
+  -webkit-font-smoothing: antialised;
+}
+
+h1 {
+  color: #fff;
+  font-size: 60px;
+  line-height: 56px;
+  font-weight: bold;
+  font-family: "Cleanvertising", sans-serif;
+  margin: 0;
+}
+
+section,
+footer {
+  padding: 58px 0 58px 0;
+}
+
+section h2,
+footer h2 {
+  color: #003469;
+  font-size: 50px;
+  line-height: 56px;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 0;
+  font-weight: normal;
+  font-family: "Cleanvertising", sans-serif;
+}
+
+section.s_dark h2, section.s_dark h3, section.s_dark p,
+footer.s_dark h2,
+footer.s_dark h3,
+footer.s_dark p {
+  color: #fff;
+}
+
+header {
+  min-height: 640px;
+  background-image: url("/img/top_bg.jpg");
+  background-position: top center;
+  background-size: cover;
+  color: #fff;
+  padding-top: 26px;
+  padding-bottom: 40px;
+}
+
+.logo {
+  font-size: 40px;
+  font-family: "RobotoBold", sans-serif;
+  font-weight: bold;
+}
+
+.top_phone {
+  text-align: right;
+}
+
+/*Табы номеров телефона*/
+.top_phone .wrapper .tab {
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+.top_phone .wrapper .tab_item {
+  font-size: 35px;
+  font-family: "RobotoBold",serif;
+}
+
+.top_phone .wrapper .active {
+  text-decoration: underline;
+}
+
+.top_header {
+  margin-top: 54px;
+}
+
+.top_header h2 {
+  margin: 10px 0 0 0;
+  font-family: "Cleanvertising", sans-serif;
+  font-size: 37px;
+}
+
+/*Табы скидки учащимся*/
+.tab_header .wrapper .active {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.tab_header {
+  margin-top: 30px;
+}
+
+.tab_header .tab {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.25);
+  text-transform: uppercase;
+  padding: 10px 25px;
+  cursor: pointer;
+  float: left;
+  font-family: "RobotoBold",sans-serif;
+  transition: all 0.25s ease;
+}
+
+.tab_header .tab_content {
+  font-family: "RobotoBold",sans-serif;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 25px 25px 20px 25px;
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.tab_header .tab_item ul, .tab_header .tab_item li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tab_header .tab_item li {
+  padding-left: 40px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.tab_header .tab_item i {
+  position: absolute;
+  left: 0;
+  top: -2px;
+  line-height: 32px;
+  color: #6e6966;
+  font-size: 24px;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  height: 46px;
+  line-height: 46px;
+  padding: 0 32px;
+  background-color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  font-family: "RobotoBold",sans-serif;
+}
+
+.button.btn_red {
+  background-color: #9B1818;
+}
+
+.button.btn_green {
+  background-color: #67bc5c;
+}
+
+.button.btn_white {
+  background-color: #fff;
+  color: #000;
+}
+
+a.button {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button_wrap {
+  text-align: right;
+  padding-top: 8px;
+}
+
+.s_tizers {
+  background-color: #c6d8ee;
+  background-image: linear-gradient(#c6d8ee, #e8eff7);
+  color: #003469;
+  font-family: "Cleanvertising",sans-serif;
+  text-transform: uppercase;
+  padding: 59px 0 0 0;
+}
+
+.s_tizers span {
+  font-size: 14px;
+  display: block;
+}
+
+.s_tizers strong {
+  font-weight: normal;
+  font-size: 23px;
+  display: block;
+}
+
+.s_tizers .row > div {
+  margin-bottom: 30px;
+}
+
+.tiz_img, .tiz_desc {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.tiz_img i {
+  font-size: 70px;
+  line-height: 46px;
+  margin-right: 5px;
+}
+
+.s_tizers .row > div:nth-child(1) i {
+  font-family: "RobotoRegular",sans-serif;
+  font-size: 75px;
+  letter-spacing: -16px;
+  margin-right: 23px;
+}
+
+.s_tizers .row > div:nth-child(1) span {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.s_tizers .row > div:nth-child(1) strong {
+  font-size: 25px;
+  line-height: 42px;
+}
+
+.s_tizers .row > div:nth-child(2) span {
+  font-size: 14px;
+  line-height: 1px;
+}
+
+.s_tizers .row > div:nth-child(2) strong {
+  font-size: 25px;
+  line-height: 52px;
+}
+
+.s_tizers .row > div:nth-child(2) i {
+  line-height: 45px;
+}
+
+.s_tizers .row > div:nth-child(3) span {
+  font-size: 14px;
+  line-height: 10px;
+}
+
+.s_tizers .row > div:nth-child(3) strong {
+  font-size: 25px;
+  line-height: 42px;
+}
+
+.s_tizers .row > div:nth-child(3) i {
+  line-height: 35px;
+}
+
+.s_tizers .row > div:nth-child(4) span {
+  font-size: 14px;
+  line-height: 11px;
+}
+
+.s_tizers .row > div:nth-child(4) strong {
+  font-size: 23px;
+  line-height: 42px;
+}
+
+.s_tizers .row > div:nth-child(4) i {
+  line-height: 36px;
+}
+
+p strong {
+  font-family: "RobotoBold", sans-serif;
+  font-weight: normal;
+}
+
+.s_profi .profi_left i {
+  font-size: 120px;
+  line-height: 120px;
+  color: #9B1818;
+}
+
+.s_profi .profi_right {
+  left: 20px;
+}
+
+.s_profi .profi_right h3 {
+  display: inline-block;
+  margin: 0;
+  font-size: 30px;
+  color: #9B1818;
+}
+
+.s_profi .profi_right p {
+  line-height: 24px;
+  margin-top: -3px;
+}
+
+.s_profi .profi_item {
+  margin-bottom: 20px;
+}
+
+.s_profi .profi_item:last-child {
+  margin-bottom: 30px;
+}
+
+form {
+  background-color: #f7f7f7;
+  padding: 25px 30px;
+  border: #67bc5c 5px solid;
+  border-radius: 5px;
+}
+
+form h2 {
+  text-transform: uppercase;
+  margin-top: 0;
+  font-family: "RobotoBold",sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 14px;
+}
+
+form input,
+form select {
+  display: block;
+  line-height: 40px;
+  height: 40px;
+  border: #d9d9d9 1px solid;
+  font-size: 20px;
+  margin-top: 3px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06) inset;
+  width: 100%;
+  text-indent: 10px;
+}
+
+form input:focus,
+form select:focus {
+  box-shadow: #67bc5c 0 0 0 2px;
+  border-radius: 3px;
+}
+
+form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 10px;
+  text-overflow: "";
+  background: url("/img/chevron-glyphicon-extra-small.png") no-repeat;
+  background-position: 97% 10px;
+  background-image: url("/img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+form select > option {
+  font-size: 14px;
+}
+
+form .button_wrap {
+  text-align: center;
+  margin: 30px 0 10px 0;
+}
+
+.s_preview {
+  background-image: url("/img/middle_bg.jpg");
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  min-height: 500px;
+  background-color: #412521;
+}
+
+.review_item {
+  color: #fff;
+  text-align: center;
+}
+
+.review_item h4 {
+  font-family: "Times New Roman",serif;
+  font-style: italic;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 26px;
+}
+
+.review_item p {
+  margin: 25px auto 0;
+  float: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.review_item .image_wrap {
+  text-align: center;
+  display: inline-block;
+}
+
+.review_item .image_wrap img {
+  width: 165px;
+  height: 165px;
+  display: inline-block;
+  border-radius: 50%;
+  border: #525a5b 10px solid;
+}
+
+.hr {
+  width: 80px;
+  height: 1px;
+  background-color: #cea380;
+  margin: auto;
+}
+
+.owl-nav div {
+  width: 34px;
+  height: 140px;
+  background-image: url("/img/s_arrows.png");
+  opacity: .5;
+  position: absolute;
+  top: 20px;
+}
+
+.owl-nav div:hover {
+  opacity: 1;
+}
+
+.owl-nav div.owl-next {
+  right: 0;
+  background-position: top right;
+}
+
+.owl-dots {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.owl-dots .owl-dot {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  display: inline-block;
+  margin: 0 5px;
+  border-radius: 50%;
+  opacity: .5;
+}
+
+.owl-dots .owl-dot.active {
+  opacity: .8;
+}
+
+.s_back {
+  background-image: url("/img/red_bg.jpg");
+  background-position: top center;
+  padding: 40px 5px;
+  text-align: center;
+}
+
+.s_back h3 {
+  margin: 0 0 30px 0;
+  font-size: 26px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.13);
+  padding: 10px 0;
+  line-height: 39px;
+}
+
+.s_contact {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.s_contact h2 {
+  display: inline-block;
+  color: #000;
+  height: 45px;
+  line-height: 45px;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+
+.s_contact .tabs {
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  vertical-align: middle;
+  margin-left: 25px;
+}
+
+.s_contact .tabs .tab {
+  float: left;
+  padding: 0 60px;
+  border: #9B1818 5px solid;
+  line-height: 38px;
+  background-color: #FFF;
+  color: #9B1818;
+  font-family: "RobotoBold", sans-serif;
+}
+
+.s_contact .tabs .tab:first-child {
+  border-radius: 3px 0 0 3px;
+}
+
+.s_contact .tabs .tab:nth-child(2) {
+  border-radius: 0 3px 3px 0;
+}
+
+.s_contact .tabs .tab.active {
+  background-color: #9B1818;
+  color: #fff;
+}
+
+.s_contact .tab_item {
+  margin-top: 11px;
+  font-size: 18px;
+}
+
+.map {
+  margin-top: 20px;
+}
+
+.overlay {
+  background: transparent;
+  position: relative;
+  width: 100%;
+  height: 550px;
+  top: 550px;
+  margin-top: -550px;
+}
+
+footer {
+  padding: 71px 0 120px 0;
+  text-align: center;
+}
+
+footer h2 {
+  color: #000;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 18px;
+  margin-bottom: 47px;
+}
+
+footer .bottom_phone {
+  color: #9B1818;
+}
+
+footer .bottom_phone .tabs {
+  text-transform: uppercase;
+}
+
+footer .bottom_phone .tab_content {
+  font-family: "RobotoBold", sans-serif;
+  font-size: 35px;
+  line-height: 46px;
+}
+
+footer .bottom_phone .wrapper .active {
+  text-decoration: underline;
+}
+
+footer .button {
+  margin-top: 40px;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red;
+  box-shadow: #9B1818 0 0 0 2px;
+  border-color: #9B1818;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
