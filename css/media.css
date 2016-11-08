@@ -2,108 +2,22 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-	.tab_header .tab_content {
-		min-width: 640px;
-	}
-	.s_tizers .row > div {
-    text-align: center;
-	}
-	.tiz_img, .tiz_desc {
-    display: block;
-    margin-top: 15px;
-	}
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	.tab_header .tab_content {
-		min-width: 0px;
-	}
-	.tiz_img, .tiz_desc {
-    display: inline-block;
-	}
-	.s_tizers .row > div {
-    text-align: left;
-	}
-	.s_profi_ch {
-		display: inline-block;
-	}
+
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	.top_phone, .logo, .top_header h1, .top_header h2{
-		text-align: center;
-	}
-	.logo {
-		margin-bottom: 15px;
-	}
-	.top_phone .wrapper .tab_item {
-	font-size: 30px;
-	}
-	.profi_item {
-		text-align: center;
-	}
-	.profi_item i{
-		padding-left: 50px;
-	}
-	.s_contact h2 {
-		margin-bottom: 20px;	
-	}
-}
 
-@media only screen and (max-width : 600px) {
-	.profi_item{
-		width: 100%;
-		text-align: center;
-		right: 10px;
-	}
-	.profi_item i{
-		padding-left: 40px;
-	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	.top_header{
-		margin-top: 30px;
-	}
-	.top_header h1 {
-		font-size: 40px;
-		line-height: 45px;
-	}
-	.top_header h2 {
-		font-size: 30px;
-	}
-	.tab_header .tabs .tab {
-		font-size: 12px;
-		padding: 10px 15px;
-	}
-	.button_wrap {
-    	text-align: center;
-	}
-	section h2 {
-		font-size: 38px;
-		line-height: 40px;
-	}
-	section {
-		position: 35px 0 35px 0
-	}
-	.profi_item{
-		right: 20px;
-	}
-	.s_contact .tabs .tab {
-		padding: 0 15px;	
-	}
-	.s_contact .tabs {
-		margin-left: 0;	
-	}
-	section h2, footer h2{
-		font-size: 35px;
-	}
-	footer .bottom_phone .tab_content{
-		font-size: 32px;
-	}
+
 }
 
 /* Custom, iPhone Retina */
